@@ -21,8 +21,6 @@ public class PlaylistTracks implements Runnable{
     private Context context;
     private String tracks;
     private SpotifyAnswerParser parser;
-    File path;
-    File file;
     List<String> playlist;
     public PlaylistTracks(String token, String playlistId, Context context, String tracks) {
         this.token = token;

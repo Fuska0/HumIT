@@ -42,7 +42,7 @@ public class SelectPlaylist extends AppCompatActivity {
             @Override
             public void onTokenReceived(String token) throws InterruptedException {
                 String playlistId = getPlaylistId(String.valueOf(linkURL.getText()));
-                Log.d("Spotify" , "sukces " + token);
+                Log.d("Spotify" , "toke connected ");
                 PlaylistTracks playlistTracks = new
                         PlaylistTracks(token, playlistId, getApplicationContext(), "");
                 Thread thread = new Thread(playlistTracks);

@@ -23,7 +23,6 @@ public class StartGameActivity extends AppCompatActivity {
     private int currentIndex = 0;
     private int maxIndex;
     private Random random = new Random();
-    private List<String> playlistCopy;
     private Settings settings;
     private MediaPlayer mediaPlayerCorrect;
     private MediaPlayer mediaPlayerIncorrect;
@@ -32,7 +31,7 @@ public class StartGameActivity extends AppCompatActivity {
     private CountDownTimer countDownTimer;
     private List<String> selectedSongs = new ArrayList<>();
     private List<Integer> answers = new ArrayList<>();
-    Playlist playlist;
+    private Playlist playlist;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,7 +51,6 @@ public class StartGameActivity extends AppCompatActivity {
         if (intent != null) {
             playlist = intent.getParcelableExtra("playlist");
             if (playlist != null) {
-                playlistCopy = new ArrayList<>(playlist.getSongList());
                 settings = intent.getParcelableExtra("settings");
                 maxIndex = settings.getNumberOfSongs();
 
@@ -106,11 +104,10 @@ public class StartGameActivity extends AppCompatActivity {
     }
 
     private void displayNextSong() {
-        int maxSongID = playlistCopy.size();
+        int maxSongID = playlist.getSongList().size();
         int songId = random.nextInt(maxSongID);
-        String nextSong = playlistCopy.get(songId);
+        String nextSong = playlist.getSongList().get(songId);
         selectedSongs.add(nextSong);
-        playlistCopy.remove(songId);
         currentIndex++;
         textView.setText(nextSong);
     }
