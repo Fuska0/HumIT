@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background3"
+    tools:context=".StartGameActivity">
+
+    <Button
+        android:id="@+id/buttonCorrect"
+        android:layout_width="364dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="6dp"
+        android:onClick="correctClicked"
+        android:background="#00000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonIncorrect"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonIncorrect"
+        android:layout_width="340dp"
+        android:layout_height="390dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="13dp"
+        android:onClick="incorrectClicked"
+        android:background="#00000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonCorrect"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleId"
+        android:layout_width="712dp"
+        android:layout_height="195dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="109dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="65dp"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:shadowColor="@color/black"
+        android:shadowRadius="40"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.312" />
+
+    <EditText
+        android:id="@+id/editTextTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="13dp"
+        android:ems="10"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:inputType="time"
+        android:textColor="#D0312D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonIncorrect"
+        app:layout_constraintStart_toEndOf="@+id/buttonCorrect" />
+</androidx.constraintlayout.widget.ConstraintLayout>
