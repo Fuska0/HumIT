@@ -1,8 +1,8 @@
 # HumIT
-HumIT is an application inspired by the game "Dugout," with a "humming" mode, adding a fun and interactive way to play with selected songs. This project is currently under development.
-## Features
-- Humming mode: A unique variation of the classic "Dugout" game in which players hum or sing songs instead of simply guessing the title or artist.
-- Custom Playlist: Uses Spotify's API to allow users to download songs from a playlist of their choice. This gives players the freedom to play with songs of their own choosing.
-## How to play
-- Select a playlist: Select a playlist from your Spotify account to use in the game, copy the link and paste it into the app
-- Start humming: In "Humming" mode, listen to a song humming or singing and try to guess the title or artist.
+HumIT to aplikacja zainspirowana grą "Czółko", z trybem "nucenia", dodającym zabawny i interaktywny sposób zabawy z wybranymi utworami. Projekt ten jest obecnie w fazie rozwoju.
+## Cechy
+- Tryb nucenia: Unikalna odmiana klasycznej gry "Czółko", w której gracze nucą lub śpiewają piosenki zamiast po prostu zgadywać tytuł lub wykonawcę.
+- Własna lista odtwarzania: Wykorzystuje API Spotify, aby umożliwić użytkownikom pobieranie utworów z wybranej przez nich listy odtwarzania. Daje to graczom swobodę grania z wybranymi przez siebie utworami.
+## Jak grać
+- Wybierz listę odtwarzania: Wybierz listę odtwarzania ze swojego konta Spotify, aby użyć jej w grze, skopiuj link i wklej go do aplikacji.
+- Zacznij nucić: W trybie "Nucenie" posłuchaj nucenia lub śpiewania piosenki i spróbuj odgadnąć jej tytuł lub wykonawcę.
