@@ -73,7 +73,6 @@ public class MainActivity extends AppCompatActivity {
             playlist = updatedPlaylist;
             // Tutaj możesz wykonać odpowiednie działania na podstawie zaktualizowanego obiektu Playlist
 
-            Log.d("TAG", playlist.getSong(0));
         }
     }
 

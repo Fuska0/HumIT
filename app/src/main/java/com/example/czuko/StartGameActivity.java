@@ -104,9 +104,8 @@ public class StartGameActivity extends AppCompatActivity {
     }
 
     private void displayNextSong() {
-        int maxSongID = playlist.getSongList().size();
-        int songId = random.nextInt(maxSongID);
-        String nextSong = playlist.getSongList().get(songId);
+
+        String nextSong = playlist.getSong();
         selectedSongs.add(nextSong);
         currentIndex++;
         textView.setText(nextSong);
